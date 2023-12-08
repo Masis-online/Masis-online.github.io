@@ -1,0 +1,730 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+html{
+    font-size: 10px;
+}
+body{
+    height: 260vh;
+    z-index: 1;
+    background: linear-gradient(180deg,  rgb(85, 85, 202) , rgb(255, 255, 255));
+}
+#HF-hed1{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    z-index: 16;
+    position: fixed;
+    align-items: center;
+    transition: width 0.4s , height 0.4s;
+    background-color: rgb(59, 59, 223);
+}
+#HF-logo{
+    position: relative;
+    left: 5%;
+}
+#HF-logo a{
+    color: rgb(255, 255, 255);
+    font-family: fantasy;
+    font-size: 4.5rem;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    left: 0%;
+    transition: color 0.3s;
+}
+#HF-logo:hover{
+    color: rgb(211, 0, 0);
+}
+#HF-open{
+    font-size: 2rem;
+    position: absolute;
+    left: 92%;
+    color: white;
+    background-color:   rgb(85, 85, 202);
+    width: 3%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    transition: background 0.4s , color 0.4s;
+    justify-content: center;
+    cursor: pointer;
+}
+#HF-open:hover{
+    background: rgb(255, 255, 255);
+    color:  rgb(85, 85, 202);
+}
+#HF-opened{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 12px 0.1px rgb(12, 12, 156);
+    flex-direction: column;
+    width: 90%;
+    background-color: rgb(122, 122, 255);
+    height: 86vh;
+    z-index: 15;
+    top: 102vh;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    transition: left 0.4s;
+    left: 5%;
+}
+#HF-reklam{
+    width: 90%;
+    height: 20vh;
+    position: relative;
+    left: 5%;
+    top: 18vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    background-color:  rgb(85, 85, 202);
+}
+#all-1{
+    width: 90%;
+    position: relative;
+    background-color: rgb(85, 85, 202);
+    left: 5%;
+    height: 159vh;
+    top: 21vh;
+}
+#alls{
+    width: 31.5%;
+    position: relative;
+    cursor: pointer;
+    left: 1%;
+    top: 2vh;
+    height: 50vh ;
+    background-size: cover;
+    box-shadow: 0px 0px 10px 0.5px black;
+}
+#alls:hover > #als-text{
+    color: rgb(255, 255, 255);
+}
+#als-text{
+    width: 100%;
+    opacity: 0.7;
+    height: 14vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    top: 36vh;
+    background-color: rgb(131, 117, 117);
+}
+#t1{
+    font-size: 2rem;
+    position: relative;
+    transition: color 0.2s, text-shadow 0.3s;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#t2{
+    font-size: 1.2rem;
+    transition: color 0.2s, text-shadow 0.3s;
+    position: relative;
+    width: 92%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#new a{
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2.5%;
+    text-shadow: 0px 0px 11px black;
+}
+
+
+
+
+  .search{
+    display: flex;
+    position: relative;
+    width: 16.5%;
+    left: 62%;
+  }
+
+  #searchik {
+    list-style-type: none;  
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+    position: fixed;
+    left: 0%;
+    width:  100%;
+    /* top: 15vh; */
+    top: -35vh;
+    text-align: center;
+    z-index: 15;
+    
+  }
+  
+  #searchik li a {
+    border: 1px solid #ddd;
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6;
+    position: relative;
+    z-index: 888;
+    height: 6vh;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+#but{
+    border: 0;
+    width: 25%;
+    left: 85%;
+    background-color: transparent;
+    position: relative;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border-bottom: 0px solid black;
+    
+}
+#searchik li a:hover:not(.header) {
+    background-color: #eee;
+  }
+
+#searchbar {
+    width: 0%;
+    position: relative;
+    font-size: 16px;
+    border: 0;
+    left: 85%;
+    height: 6vh;
+    background-color: transparent;
+    outline: 0;
+    border-bottom: 1px solid rgb(0, 0, 0);
+  }
+#mug{
+    z-index: -5;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.75;
+    position:fixed;
+    top: 0vh;
+    transition: background 0.2s;
+    background: transparent;
+}
+#serchi{
+    position: absolute;
+    font-size: 2.5rem;
+    left: 85%;
+    top: 1.3vh;
+    transition: color 0.3s;
+     background: rgb(255, 0, 0);
+     color: transparent;
+    z-index: 7;
+    cursor: pointer;
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 200, 200);
+}
+#search_result{
+    width: 95%;
+    height: 100vh;
+    position: fixed;
+    z-index: 555;
+    /* top: 15vh; */
+    top: 100vh;
+    position: fixed;
+    transition: top 0.3s;
+    left: 2.5%;
+    background-color: rgb(148, 0, 0);
+}
+#hes{
+    font-size: 2.5rem;
+    color: white;
+    position: relative;
+    left: 5%;
+    top: 5vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#hes2{
+    font-size: 2rem;
+    display: flex;
+    width: 90%;
+    height: 25vh;
+    color: rgb(255, 0, 0);
+    background-color: transparent;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    top: 7vh;
+    left: 5%;
+}
+#hd{
+    position: relative;
+    left: 5%;
+    color: rgb(0, 0, 0);
+    width: 30%;
+    height: 4vh;
+    top: -12vh;
+    text-align: center;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0px 0px 12px;
+    background-color: rgb(255, 0, 0);
+}
+.r{
+    position: relative;
+    left: 2.5%;
+}
+.txt{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.txt a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 100000px){
+    #hr{
+        display: none;
+    }
+    #alls2{
+        display: none;
+    }
+    #alls3{
+        display: none;
+    }
+}
+@media screen and (max-width: 1240px) {
+    .search{
+        left: 60%;
+    }
+}
+@media screen and (max-width: 1180px) {
+    #HF-open{
+        width: 4%;
+        left: 91%;
+    }
+    #alls{
+        height: 40vh;
+    }
+    #als-text{
+        top: 26vh;
+    }
+    #hr{
+        display: block;
+    }
+    #t1{
+        font-size: 1.9rem;
+    }
+    #t2{
+        font-size: 1.11rem;
+    }
+    #all-1{
+        height: 149vh;
+    }
+    #HF-logo:hover{
+        color: white;
+    }
+    #HF-logo{
+        left: 4%;
+        font-size: 3rem;
+    }
+    #i1{
+        display: none;
+    }
+    .search{
+        left: 58%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .search{
+        left: 56%;
+    }
+}
+@media screen and (max-width: 960px){
+    #t2{
+        font-size: 0.9rem;
+    }
+    .search{
+        left: 54%;
+    }
+}
+@media screen and (max-width: 902px) {
+    #but{
+        left: 80%;
+    }
+    #searchbar{
+        left: 80%;
+    }
+}
+@media screen and (max-width: 890px){
+    #t2{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 840px){
+    #HF-open{
+        width: 6%;
+        left: 92%;
+    }
+    #alls{
+        display: none;
+    }
+    #hr{
+        display: none;
+    }
+    #alls2{
+        display: block;
+        width: 90%;
+        position: relative;
+        left: 5%;
+        background-color: rgb(70, 70, 185);
+        height: 30vh;
+        display: flex;
+        cursor: pointer;
+    }
+    #alimg{
+        background-size: cover;
+        width: 50%;
+        height: 30vh;
+    }
+    #tal2{
+        width: 45%;
+        background-color:  rgb(85, 85, 202);
+        height: 18vh;
+        position: relative;
+        left: 2.5%;
+        top: 6vh;
+    }
+    #alt1{
+        font-size: 1.9rem;
+        width: 90%;
+        text-align: center;
+        position: relative;
+        top: 2vh;
+        left: 5%;
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    #alt2{
+        position: relative;
+        top: 4vh;
+        left: 5%;
+        font-size: 1.4rem;
+        width: 90%;
+        text-align: center;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #HF-open:hover{
+        background-color: rgb(187, 0, 0);
+        color: white;
+    }
+    #all-1{
+        height: 204vh;
+    }
+    body{
+        height: 300vh;
+    }
+    #contact{
+        top: 25vh;
+    }
+    #but{
+        left: 55%;
+    }
+    .search{
+        left: 55%;
+    }
+
+}
+@media screen and (max-width: 806px){
+    .search{
+        left: 55%;
+    }
+}
+
+@media screen and (max-width: 788px){
+    #but{
+        left: 88%;
+    }
+    .search{
+        left: 52%;
+    }
+    #HF-open{
+        background-color: transparent;
+    }
+    #HF-open:hover{
+        background-color: transparent;
+    }
+}
+@media screen and (max-width: 720px){
+    #but{
+        left: 88%;
+    }
+    .search{
+        left: 47%;
+        width: 20%;
+    }
+}
+@media screen and (max-width: 657px){
+    #but{
+        left: 88%;
+    }
+    .search{
+        left: 44%;
+        width: 22%;
+    }
+}
+@media screen and (max-width: 625px){
+    #but{
+        left: 88%;
+    }
+    #searchbar::placeholder{
+        position: relative;
+        left: 5%;
+    }
+    .search{
+        left: 40%;
+        width: 20%;
+    }
+}
+@media screen and (max-width: 576px){
+    #but{
+        left: 88%;
+    }
+    #searchbar::placeholder{
+        position: relative;
+        left: 5%;
+    }
+    .search{
+        left: 48%;
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 576px){
+    #but{
+        left: 88%;
+    }
+    #searchbar::placeholder{
+        position: relative;
+        left: 5%;
+    }
+    .search{
+        left: 38%;
+        width: 20%;
+    }
+}
+@media screen and (max-width: 532px){
+    .search{
+        left: 34%;
+    }
+}
+@media screen and (max-width: 488px){
+    #but{
+        left: 88%;
+    }
+    #searchbar::placeholder{
+        position: relative;
+        left: 5%;
+    }
+    .search{
+        left: 30%;
+        width: 19%;
+    }
+}
+
+@media screen and (max-width: 457px){
+    #but{
+        left: 88%;
+    }
+    #searchbar::placeholder{
+        position: relative;
+        left: 5%;
+    }
+    #searchbar{
+        width: 0%;
+    }
+    .search{
+        left: 20%;
+        width: 25%;
+    }
+}
+@media screen and (max-width: 410px){
+    #but{
+        left: 88%;
+    }
+    #searchbar::placeholder{
+        position: relative;
+        left: 5%;
+    }
+    .search{
+        left: 10%;
+        width: 30%;
+    }
+}
+@media screen and (max-width: 367px){
+    #but{
+        left: 88%;
+    }
+    #searchbar::placeholder{
+        position: relative;
+        left: 5%;
+    }
+    .search{
+        left: 0%;
+        width: 36%;
+    }
+}
+@media screen and (max-width: 340px){
+    .search{
+        left: -3%;
+    }
+}
+@media screen and (max-width: 324px){
+    .search{
+        left: -6%;
+    }
+}
+@media screen and (max-width: 309px){
+    .search{
+        left: -10%;
+    }
+}
+
+
+@media screen and (max-width: 743px) {
+    #alt1{
+        font-size: 1.5rem;
+        top: 4rem;
+    }
+    #alt2{
+        font-size: 1.1rem;
+        top: 4.5rem;
+    }
+}
+
+@media screen and (max-width: 592px) {
+    #HF-reklam{
+        font-size: 1.5rem;
+    }
+    #HF-open{
+        width: 7%;
+        left: 90%;
+    }
+    #alt1{
+        top: 3rem;
+        font-size: 1.2rem;
+    }
+    #alt2{
+        top: 3.5rem;
+    }
+}
+@media screen and (max-width : 480px) {
+
+    #alls2{
+        display: none;
+    }
+    #HF-open{
+        width: 10%;
+        left: 88%;
+    }
+    #HF-reklam{
+        font-size: 1.3rem;
+    }
+    #alls3{
+        display: block;
+        height: 50vh;
+        width: 90%;
+        position: relative;
+        top: -20vh;
+        cursor: pointer;
+        left: 5%;
+        background-color:  rgb(69, 69, 201);
+    }
+    #alimg3{
+        width: 100%;
+        background-size: cover;
+        height: 30vh;
+    }
+    #HF-open{
+        left: 86%;
+    }
+    #tal3{
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    #alt31{
+        color: white;
+        font-size: 1.7rem;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #alt32{
+        color: white;
+        position: relative;
+        top: 1vh;
+        font-size: 1.3rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #all-1{
+        height: 215vh;
+    }
+    #contact{
+        display: none;
+    }
+    body{
+        height: 260vh;
+    }
+}
+@media screen and (max-width: 383px) {
+    #HF-open{
+        left: 84%;
+        width: 12%;
+    }
+}
+@media screen and (max-width : 252px ){
+    #HF-logo a{
+        left: 12%;
+        font-size: 2.5rem;
+    }
+    #HF-hed1{
+        height: 10vh;
+    }
+}
