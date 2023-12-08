@@ -28,7 +28,7 @@ body{
 }
 #HF-logo a{
     color: rgb(255, 255, 255);
-    font-family: fantasy;
+    font-family: sans-serif;
     font-size: 4.5rem;
     position: relative;
     cursor: pointer;
