@@ -61,7 +61,6 @@ body{
     position: fixed;
     display: flex;
     align-items: center;
-    opacity: 0.5;
     justify-content: center;
     box-shadow: 0px 0px 12px 0.1px rgb(12, 12, 156);
     flex-direction: column;
@@ -70,8 +69,6 @@ body{
     height: 86vh;
     z-index: 15;
     top: 102vh;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
     transition: left 0.4s;
     left: 5%;
 }
