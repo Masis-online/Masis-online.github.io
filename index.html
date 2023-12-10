@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <
+    <div class="alllls">
     <header id="HF-hed1" style="top: 0;">
         <div id="HF-logo"><a href="Home.html">Masis</a></div>
         <div class="search">
@@ -329,5 +329,51 @@ opn.addEventListener("click", function(){
 
 
     <div style="display: none;" id="all2"></div>
+</div>
+
+<style>
+    *, *::after, *::before {
+    box-sizing: border-box;
+  }
+
+  .preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: rgb(23, 22, 22);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: opacity 0.3s linear;
+  }
+  
+  .page-content {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+</style>
+<body>
+    <div class="preloader">
+        <svg width="200" height="200" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-ripple" style="background:0 0"><circle cx="50" cy="50" r="4.719" fill="none" stroke="#1d3f72" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="3" keySplines="0 0.2 0.8 1" begin="-1.5s" repeatCount="indefinite"/><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="3" keySplines="0.2 0 0.8 1" begin="-1.5s" repeatCount="indefinite"/></circle><circle cx="50" cy="50" r="27.591" fill="none" stroke="#5699d2" stroke-width="2"><animate attributeName="r" calcMode="spline" values="0;40" keyTimes="0;1" dur="3" keySplines="0 0.2 0.8 1" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" calcMode="spline" values="1;0" keyTimes="0;1" dur="3" keySplines="0.2 0 0.8 1" begin="0s" repeatCount="indefinite"/></circle></svg>
+      </div>
+    
+    <style>
+    @media screen and (max-width: 100000px){
+        .alllls{
+            display: none;
+        }
+    }
+    @media screen and (max-width: 816px){
+        .alllls{
+            display: block;
+        }
+        .preloader{
+            display: none;
+        }
+    }
+</style>
 </body>
 </html>
